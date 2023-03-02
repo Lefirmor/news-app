@@ -1,0 +1,33 @@
+import { fetchArticles } from '';
+import { createCards } from '';
+
+const searchForm = document.querySelector('.search_form');
+const searchText = document.querySelector('.search_input');
+const searchButton = document.querySelector('.search_btn');
+
+
+let query = '';
+let totalHits = 0;
+let page = 1;
+const perPage = 10;
+
+searchForm.addEventListener('submit', onSearch);
+
+
+function onSearch(event) {
+  event.preventDefault();
+  page = 1;
+  query = event.currentTarget.searchQuery.value.trim();
+  clearFormGallery();
+  if (query === '') {
+    noInfoForSearch();
+    return;
+  }
+
+  
+
+function clearFormGallery() {
+  gallery.innerHTML = '';
+}
+
+
