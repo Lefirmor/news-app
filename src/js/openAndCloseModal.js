@@ -1,6 +1,7 @@
 const modal = document.querySelector(".menu_mob_btn")
+const backdrop = document.querySelector(".backdrop")
 
 modal.addEventListener("click", e => {
-    modal.classList.add("is-hidden")
+    backdrop.classList.remove("is-hidden")
     console.log(123)
 })
