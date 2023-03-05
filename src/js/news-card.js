@@ -7,13 +7,6 @@ export default function createmarkup({
   imgUrl,
   articleId,
 }) {
-//   const cardItems = data.map(({
-//     publishedDate,
-//     sectionName,
-//     articleTitle,
-//     urlOriginalArticle,
-//     imgUrl
-//     }) => {
 
   let cardItems = '';
   return (cardItems = `
